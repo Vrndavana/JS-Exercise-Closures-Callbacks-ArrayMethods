@@ -1,5 +1,4 @@
-// ⭐️ Example Challenge START ⭐️
-
+// :star:️ Example Challenge START :star:️
 /**
  * ### Challenge `processFirstItem`
  * 
@@ -17,17 +16,12 @@
 function processFirstItem(stringList, callback) {
   return callback(stringList[0])
 }
-
-// ⭐️ Example Challenge END ⭐️
-
-
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-
+// :star:️ Example Challenge END :star:️
+// :point_down: COMPLETE YOUR WORK BELOW :point_down:
+// :point_down: COMPLETE YOUR WORK BELOW :point_down:
+// :point_down: COMPLETE YOUR WORK BELOW :point_down:
 /////////////// CALLBACKS AND HIGHER-ORDER FUNCTIONS ///////////////
 /////////////// CALLBACKS AND HIGHER-ORDER FUNCTIONS ///////////////
-
 /**
  * ### Challenge `processLength`
  * 
@@ -48,10 +42,10 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(/* CODE HERE */) {
+function processLength(list, callback) {
+  return callback(list.length);
   /* CODE HERE */
 }
-
 /**
  * ### Challenge `processLastItem`
  * 
@@ -66,16 +60,17 @@ function processLength(/* CODE HERE */) {
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(/* CODE HERE */) {
+function processLastItem(stringList, callback) {
+  return callback(stringList[stringList.length-1]);
   /* CODE HERE */
 }
-
 /**
  * ### Challenge `processSum`
  * 
  * @instructions
  * Implement a higher-order function called `processSum`.
  * It takes two arguments:
+ * 
  * @param numberList array of numbers.
  * @param callback function that takes a number as its argument.
  * @returns the result of invoking `callback` passing the SUM of all elements in `numberList`.
@@ -87,10 +82,10 @@ function processLastItem(/* CODE HERE */) {
  * [2] Invoking `processSum` passing `[]` and `(num) => num + 1000`,
  * should return 1000.
 */
-function processSum(/* CODE HERE */) {
+function processSum(numberList, callback) {
+      return callback(numberList.reduce( (accumulator, num) => accumulator + num, 0))}
+  
   /* CODE HERE */
-}
-
 /**
  * ### Challenge `processProduct`
  * 
@@ -109,10 +104,10 @@ function processSum(/* CODE HERE */) {
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-function processProduct(/* CODE HERE */) {
+function processProduct(num1, num2, callback) {
   /* CODE HERE */
+  return 
 }
-
 /**
  * ### Challenge `processContains`
  * 
@@ -136,7 +131,6 @@ function processProduct(/* CODE HERE */) {
 function processContains(/* CODE HERE */) {
   /* CODE HERE */
 }
-
 /**
  * ### Challenge `processDuplicateFree`
  * THIS IS A STRETCH PROBLEM! ATTEMPT ONLY AFTER COMPLETING ALL NON-STRETCH CHALLENGES!
@@ -159,15 +153,12 @@ function processContains(/* CODE HERE */) {
 function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
 }
-
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
-
 // A local community center is holding a fund raising 5k fun run and has invited
 // 50 small businesses to make a small donation on their behalf for some much needed
 // updates to their facilities. Each business has assigned a representative
 // to attend the event along with a small donation.
-
 /**
  * ### Challenge `getFullNames`
  * 
@@ -181,7 +172,6 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
 function getFullNames(/* CODE HERE */) {
   /* CODE HERE */
 }
-
 /**
  * ### Challenge `firstNamesAllCaps`
  * 
@@ -197,7 +187,6 @@ function getFullNames(/* CODE HERE */) {
 function firstNamesAllCaps(/* CODE HERE */) {
   /* CODE HERE */
 }
-
 /**
  * ### Challenge `getRunnersByTShirtSize`
  * 
@@ -214,7 +203,6 @@ function firstNamesAllCaps(/* CODE HERE */) {
 function getRunnersByTShirtSize(/* CODE HERE */) {
   /* CODE HERE */
 }
-
 /**
  * ### Challenge `tallyUpDonations`
  * 
@@ -228,10 +216,8 @@ function getRunnersByTShirtSize(/* CODE HERE */) {
 function tallyUpDonations(/* CODE HERE */) {
   /* CODE HERE */
 }
-
 /////////////// CLOSURES ///////////////
 /////////////// CLOSURES ///////////////
-
 /**
  * ### Challenge `counterMaker`
  * 
@@ -253,7 +239,6 @@ function counterMaker() {
   }
   // BROKEN CODE ENDS
 }
-
 /**
  * ### Challenge `counterMakerWithLimit`
  * 
@@ -277,11 +262,9 @@ function counterMaker() {
 function counterMakerWithLimit(/* CODE HERE */) {
   /* CODE HERE */
 }
-
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
-
 if (typeof exports !== 'undefined') {
   // IGNORE: Test/Env Detected
   // For Node/Non-browser test env
